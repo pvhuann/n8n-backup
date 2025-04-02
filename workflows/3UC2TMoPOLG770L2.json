@@ -1,0 +1,804 @@
+{
+  "active": false,
+  "connections": {
+    "Check State": {
+      "main": [
+        [
+          {
+            "node": "Command1 processing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Command2 processing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Command3 processing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Command check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command Check": {
+      "main": [
+        [
+          {
+            "node": "Switch (Command Routing)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare IF Value",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command1 result": {
+      "main": [
+        [
+          {
+            "node": "Clear State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command2 result": {
+      "main": [
+        [
+          {
+            "node": "Clear State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command3 result": {
+      "main": [
+        [
+          {
+            "node": "Clear State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare IF Value": {
+      "main": [
+        [
+          {
+            "node": "Check State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Command Check",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send Typing action",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command1 processing": {
+      "main": [
+        [
+          {
+            "node": "Command1 result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command2 processing": {
+      "main": [
+        [
+          {
+            "node": "Command2 result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Command3 processing": {
+      "main": [
+        [
+          {
+            "node": "Command3 result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set waitingForContent1": {
+      "main": [
+        [
+          {
+            "node": "Command1 content request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set waitingForContent2": {
+      "main": [
+        [
+          {
+            "node": "Command2 content request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set waitingForContent3": {
+      "main": [
+        [
+          {
+            "node": "Command3 content request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch (Command Routing)": {
+      "main": [
+        [
+          {
+            "node": "Set waitingForContent1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set waitingForContent2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set waitingForContent3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-03-21T16:49:35.649Z",
+  "id": "3UC2TMoPOLG770L2",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "send menu to telebot",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "id": "44bc22b9-8423-4876-bd56-7f3be5f97918",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "position": [
+        100,
+        780
+      ],
+      "webhookId": "30a3f361-4607-40f0-bc7e-d1fb385430d2",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/command1"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "1"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "d09b6282-e9f8-4e43-b3db-9edae88cd634",
+                    "operator": {
+                      "name": "filter.operator.equals",
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/command2"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "2"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "89a078b3-c2f3-47ff-9136-5de7bd05fb98",
+                    "operator": {
+                      "name": "filter.operator.equals",
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/command3"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "3"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "74c86203-1ec0-4f7f-92a8-79a45af84573",
+      "name": "Switch (Command Routing)",
+      "type": "n8n-nodes-base.switch",
+      "position": [
+        520,
+        740
+      ],
+      "typeVersion": 3.2
+    },
+    {
+      "parameters": {
+        "jsCode": "let workflowStaticData = $getWorkflowStaticData('global');\nif (!workflowStaticData.telegramStates) {\n    workflowStaticData.telegramStates = {}; // Create the nested object\n}\nreturn workflowStaticData;"
+      },
+      "id": "b058ac3e-9a19-40a2-b92b-2c30afe57da4",
+      "name": "Temp to Initiate Static Data",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        100,
+        280
+      ],
+      "notesInFlow": false,
+      "typeVersion": 2,
+      "notes": "You only need to run the initialization step once per workflow, regardless of the number of Telegram chat IDs. The initialization creates the telegramStates object within the global static data of the workflow. Once that object exists, the workflow will use it to store the state for any chat ID."
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.state }}",
+                    "rightValue": "waitingForContent1"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "1"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "1a145782-de66-496c-aa5e-5fa5b93614f9",
+                    "operator": {
+                      "name": "filter.operator.equals",
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.state }}",
+                    "rightValue": "waitingForContent2"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "2"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "e83e025f-2758-4baa-a868-bdc0f2bd7ac2",
+                    "operator": {
+                      "name": "filter.operator.equals",
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "leftValue": "={{ $json.state }}",
+                    "rightValue": "waitingForContent3"
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "3"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "7a136ae1-ef6c-4f44-98d0-da0678295585",
+      "name": "Check State",
+      "type": "n8n-nodes-base.switch",
+      "position": [
+        540,
+        1460
+      ],
+      "typeVersion": 3.2
+    },
+    {
+      "parameters": {
+        "jsCode": "let workflowStaticData = $getWorkflowStaticData('global');\nif (workflowStaticData.telegramStates) {\n    delete workflowStaticData.telegramStates[$('Telegram Trigger').first().json.message.chat.id.toString()];\n}\nreturn $input.all();"
+      },
+      "id": "47ebdfec-b783-4c35-8712-51f3afe121fa",
+      "name": "Clear State",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        1480,
+        1340
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "jsCode": "let workflowStaticData = $getWorkflowStaticData('global');\nif (!workflowStaticData.telegramStates) {\n    workflowStaticData.telegramStates = {};\n}\nworkflowStaticData.telegramStates[$json.message.chat.id.toString()] = { waitingForContent1: true };\nreturn $input.all();"
+      },
+      "id": "39dd8fbe-fc14-4aa9-b88c-0626c65f113b",
+      "name": "Set waitingForContent1",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        800,
+        240
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "jsCode": "let workflowStaticData = $getWorkflowStaticData('global');\nif (!workflowStaticData.telegramStates) {\n    workflowStaticData.telegramStates = {};\n}\nworkflowStaticData.telegramStates[$json.message.chat.id.toString()] = { waitingForContent2: true };\nreturn $input.all();"
+      },
+      "id": "0f70c42a-a458-4a23-8a3a-3dd7591175cc",
+      "name": "Set waitingForContent2",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        800,
+        460
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "jsCode": "let globalData = $getWorkflowStaticData('global');\nlet state = \"none\"; // Default state\n\nif (globalData && globalData.telegramStates) {\n    let chatData = globalData.telegramStates[$json.message.chat.id.toString()];\n    if (chatData) {\n        if (chatData.waitingForContent1 === true) {\n            state = \"waitingForContent1\";\n        } else if (chatData.waitingForContent2 === true) {\n            state = \"waitingForContent2\";\n        } else if (chatData.waitingForContent3 === true) {\n            state = \"waitingForContent3\";\n        }\n    }\n}\nreturn { state };"
+      },
+      "id": "8aa62bcd-b6b4-4eb3-baf9-e73dc36568b0",
+      "name": "Prepare IF Value",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        380,
+        1480
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json['message']['text']}}",
+              "operation": "startsWith",
+              "value2": "/command"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "id": "76902aef-5341-408b-855c-468002b66c57",
+      "name": "Command Check",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        320,
+        780
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "jsCode": "let workflowStaticData = $getWorkflowStaticData('global');\nif (!workflowStaticData.telegramStates) {\n    workflowStaticData.telegramStates = {};\n}\nworkflowStaticData.telegramStates[$json.message.chat.id.toString()] = { waitingForContent3: true };\nreturn $input.all();"
+      },
+      "id": "76b7ad62-0fdc-4b31-ab5d-52f79865f1eb",
+      "name": "Set waitingForContent3",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        800,
+        680
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "operation": "sendChatAction",
+        "chatId": "={{ $json.message.chat.id }}"
+      },
+      "id": "d5cd2d50-469e-430c-82af-8fdd0c1fbeb1",
+      "name": "Send Typing action",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        320,
+        520
+      ],
+      "webhookId": "425443f1-117e-4aaa-84d5-74ce2a1a1b64",
+      "typeVersion": 1.2,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{$json.message.chat.id}}",
+        "text": "Please enter the content for command1:",
+        "additionalFields": {}
+      },
+      "id": "f0de888c-bce0-4924-ab4e-6e2fb38f7d1c",
+      "name": "Command1 content request",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1060,
+        240
+      ],
+      "webhookId": "e6222973-c851-4ee3-88e7-114eb59193e6",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{$json['message']['chat']['id']}}",
+        "text": "Please enter the content for command2:",
+        "additionalFields": {}
+      },
+      "id": "e27fae1c-4ad7-4e2f-a225-feba74165872",
+      "name": "Command2 content request",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1060,
+        460
+      ],
+      "webhookId": "4b6373cf-99db-4fd9-8665-bc8dbba64c32",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{$json['message']['chat']['id']}}",
+        "text": "Please enter the content for command2:",
+        "additionalFields": {}
+      },
+      "id": "bea2e04c-c0b7-40e4-ac88-abb840394339",
+      "name": "Command3 content request",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1060,
+        680
+      ],
+      "webhookId": "8e2fb397-4b82-4a5d-a358-32ed6c18ac22",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "Please choose a command from the menu.",
+        "additionalFields": {}
+      },
+      "id": "4ea8402e-ff7c-42f2-bc49-be835da049e9",
+      "name": "No Command check",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        800,
+        1860
+      ],
+      "webhookId": "2814cc4c-0392-43f4-bbb4-fd096e61ac13",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Command processing",
+        "height": 829,
+        "width": 573,
+        "color": 4
+      },
+      "id": "076880d0-0586-4624-989a-7bb5efad77aa",
+      "name": "Sticky Note5",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        720,
+        980
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "=This is the generated result for command1: {{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "63c9c021-5465-42ed-9401-a55c18248b08",
+      "name": "Command1 result",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1080,
+        1080
+      ],
+      "webhookId": "05e84345-6d19-42cf-bc8c-afdfd87339f1",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "=This is the generated result for command2: {{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "11afa566-534c-4070-930f-ec467970ddc3",
+      "name": "Command2 result",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1080,
+        1340
+      ],
+      "webhookId": "55ee4a03-2d14-4caa-94f8-b11db34ddabd",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "=This is the generated result for command3: {{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "4ad3a5e3-18eb-46b2-861f-6ce6b41b6f06",
+      "name": "Command3 result",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1080,
+        1600
+      ],
+      "webhookId": "55ee4a03-2d14-4caa-94f8-b11db34ddabd",
+      "typeVersion": 1,
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Initialization of global static data\nYou only need to run the initialization step once per workflow, regardless of the number of Telegram chat IDs. The initialization creates the telegramStates object within the global static data of the workflow. Once that object exists, the workflow will use it to store the state for any chat ID.",
+        "height": 469,
+        "width": 313,
+        "color": 7
+      },
+      "id": "806d7b69-510f-43d4-8902-0a247cd885c7",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        0,
+        0
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "## Command content requesting",
+        "height": 789,
+        "width": 573,
+        "color": 2
+      },
+      "id": "6fd80a53-96cb-452a-a140-6bd91b0863b1",
+      "name": "Sticky Note6",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        720,
+        140
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "3441f195-75bf-4d0f-8d60-62a0afb89e2e",
+      "name": "Command1 processing",
+      "type": "n8n-nodes-base.noOp",
+      "position": [
+        800,
+        1080
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "956f4da4-c46b-4f58-bf0a-f9ea36d47819",
+      "name": "Command2 processing",
+      "type": "n8n-nodes-base.noOp",
+      "position": [
+        800,
+        1340
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "44fa1803-fa1b-40e1-96d1-95e5fa407bbf",
+      "name": "Command3 processing",
+      "type": "n8n-nodes-base.noOp",
+      "position": [
+        800,
+        1600
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "## Adding More Commands\nThe template is designed to be easily extended. To add more commands:\n\n1.  Add a new output to the \"Switch (Command Routing)\" node for your new command (e.g., /command4).\n2.  Duplicate one of the \"Set waitingForContentX\" and \"CommandX content request\" node pairs. Rename the \"Set\" node to reflect the new command number (e.g., \"Set waitingForContent4\") and update the variable name within the code accordingly. Also rename the request node (e.g. Command4 content request)\n3.  Add a corresponding output to the \"Check State\" node.\n4.  Create a new processing branch for your new command, connecting it to the appropriate output of the \"Check State\" node, and the entry of the \"Clear State\" node.",
+        "height": 309,
+        "width": 573,
+        "color": 7
+      },
+      "id": "0531f12e-db92-40ba-82f0-e4d363ead205",
+      "name": "Sticky Note1",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        720,
+        2060
+      ],
+      "typeVersion": 1
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-04-02T06:02:20.000Z",
+  "versionId": "bf14aaa4-c9a9-47cc-a2bf-0af28e2af551"
+}
