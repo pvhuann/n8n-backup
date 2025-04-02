@@ -1,6 +1,18 @@
 {
   "active": false,
-  "connections": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "createdAt": "2025-04-02T06:58:30.834Z",
   "id": "Yie6Dz9clnMpAuXL",
   "meta": null,
@@ -16,6 +28,29 @@
       ],
       "id": "2278e54e-52f9-43a9-b0f3-0fadf189604d",
       "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8d51d173-f238-4331-be73-08f1bdc0e955",
+              "name": "test",
+              "value": "hi everyone",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        0
+      ],
+      "id": "1103eb84-aad4-4d18-ac31-23342575e6cf",
+      "name": "Edit Fields"
     }
   ],
   "pinData": {},
@@ -25,6 +60,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-04-02T06:58:30.834Z",
-  "versionId": "64bf791e-d417-467e-b5cd-03b8e138f5bb"
+  "updatedAt": "2025-04-02T07:06:39.000Z",
+  "versionId": "e8928fe7-f1ea-483e-8c0a-d1bf7417efa2"
 }
