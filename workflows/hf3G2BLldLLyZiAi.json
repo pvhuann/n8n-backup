@@ -1,0 +1,1331 @@
+{
+  "active": false,
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "XML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "XML": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "HTTP Request3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request5",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cron": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Telegram1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request6",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request6": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request7": {
+      "main": [
+        [
+          {
+            "node": "XML1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "XML1": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "createdAt": "2025-03-16T08:02:34.983Z",
+  "id": "hf3G2BLldLLyZiAi",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "main test",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "=https://www.goldapi.io/api/XAU/USD/{{ $json.dateFormat }}",
+        "options": {},
+        "headerParametersUi": {
+          "parameter": [
+            {
+              "name": "x-access-token",
+              "value": "goldapi-dtg6sm7wzn117-io"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      },
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -480
+      ],
+      "id": "d4972a11-8da0-4fa1-93a8-99004d708286",
+      "alwaysOutputData": false,
+      "disabled": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "message",
+              "value": "=Giá vàng quốc tế :{{ $json.price }} USD"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        620,
+        -400
+      ],
+      "id": "93b8f849-034f-41ab-a97f-b1b6b27314ca",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "chatId": "6325033152",
+        "text": "={{ $json.message }}",
+        "replyMarkup": "=none",
+        "forceReply": {},
+        "replyKeyboardOptions": {},
+        "replyKeyboardRemove": {},
+        "additionalFields": {}
+      },
+      "name": "Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [
+        4880,
+        720
+      ],
+      "id": "99938917-5e5d-4e45-861c-2e208197fbbc",
+      "webhookId": "b8195a9a-dc19-4cbf-a64d-0da44ecd653e",
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx?b=10",
+        "options": {
+          "response": {}
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -60,
+        620
+      ],
+      "id": "3f87feb2-5c28-44e4-b242-130fcc3905bd",
+      "name": "HTTP Request1",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {
+        "options": {
+          "attrkey": "=$ {{ $json.data }}",
+          "explicitRoot": false,
+          "mergeAttrs": true
+        }
+      },
+      "name": "XML",
+      "type": "n8n-nodes-base.xml",
+      "position": [
+        160,
+        620
+      ],
+      "typeVersion": 1,
+      "id": "9b7eeeb6-8cba-41aa-bb32-f083a9d70932",
+      "retryOnFail": false,
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst rates = $json.Exrate;\n// const time = $json.DateTime;\nconst usdToVndRate = rates.find(rate =>(rate.CurrencyCode === 'USD'));\nreturn {\n  usdToVndRate\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        620
+      ],
+      "id": "30a810b2-368c-4272-9a9a-5e49894d9bce",
+      "name": "Code1",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "url": "https://sjc.com.vn/GoldPrice/Services/PriceService.ashx",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        60,
+        120
+      ],
+      "id": "49833f69-41e4-4d65-9eaf-648a7daa24a1",
+      "name": "HTTP Request2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": []
+        },
+        "includeOtherFields": true,
+        "include": "selected",
+        "includeFields": "data[0].BuyValue, data[0].SellValue, data[0].BranchName",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        320,
+        120
+      ],
+      "id": "2ea67629-1b97-4ae4-a5ca-84bb1306be0f",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "url": "https://api.telegram.org/bot7553818080:AAEHqxrOynwVmOiDArtvrBl1SMxz6IzW8cs/getUpdates?offset=-1",
+        "options": {
+          "timeout": 5000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1780,
+        1060
+      ],
+      "id": "c0a74af0-ed5d-4f93-9846-69e30c176716",
+      "name": "HTTP Request3",
+      "executeOnce": false,
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst mes = $json.text??$json.data;\nfunction extractTextAndDate(input){\n  const regex = /(gia vang|ty gia|bitcoin|tong hop)(?: ngay)?(?: (\\d{2}\\/\\d{2}\\/\\d{4}))?/i;\n  const match = input.match(regex);\n  function isValidDate(dateStr) {\n        if (!dateStr) return false;\n        const [day, month, year] = dateStr.split(\"/\").map(Number);\n        const date = new Date(year, month - 1, day);\n        return date.getFullYear() === year && date.getMonth() === month - 1 && date.getDate() === day;\n    }\n    \n    function getCurrentDate() {\n        const now = new Date();\n        return now.toLocaleDateString(\"en-GB\"); // dd/mm/yyyy\n    }\n    \n    if (match) {\n        const extractedDate = match[2];\n        if (extractedDate && !isValidDate(extractedDate)) {\n            return { error: \"Invalid date format\" };\n        }\n        return {\n            text: match[1].trim(),\n            date: extractedDate || getCurrentDate()\n        };\n    }\n    \n    return { error: \"Input must contain 'gia vang/ty gia/tong hop'\" };\n}\nreturn extractTextAndDate(mes);\n\n// return {getMessage};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1300,
+        720
+      ],
+      "id": "2831b2d9-1a95-4825-af08-4c8382f7ad31",
+      "name": "Code2",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "url": "https://sjc.com.vn/bieu-do-gia-vang",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -420,
+        1640
+      ],
+      "id": "9aed9a7f-fff6-4de1-bc3f-47a330b7c388",
+      "name": "HTTP Request4"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst date = $json.date;\nconst text =$json.text;\nif({date}){\n  const [day,month,year]= date.split('/');\n  const dateFormat = `${year}${month.padStart(2,'0')}${day.padStart(2,'0')}`;\n  return {\n  text,\n  dateFormat\n  };\n}else{\n  const dateFormat ={date};\n  return {\n    text,\n    dateFormat\n  }\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        100
+      ],
+      "id": "24030b3d-20eb-489a-bd53-30b543b10b3a",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message",
+          "callback_query"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -2060,
+        700
+      ],
+      "id": "208e4ff5-10bf-4147-83dc-fd33e8004ccc",
+      "name": "Telegram Trigger",
+      "webhookId": "3f55a935-d55f-40cc-af8a-23f03026841d",
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": []
+        },
+        "includeOtherFields": true,
+        "include": "selected",
+        "includeFields": "result[0].message.text",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1540,
+        1060
+      ],
+      "id": "646a1005-fee4-4764-a9e4-953fbd012ab1",
+      "name": "Edit Fields5"
+    },
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {}
+          ]
+        }
+      },
+      "name": "Cron",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        -2060,
+        940
+      ],
+      "typeVersion": 1,
+      "id": "66cbd8bd-f6fd-4b8c-af1b-fb898f9d974f",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b2130953-9b8e-4c76-b0f8-ee24cbbe0837",
+              "leftValue": "={{ $json.error }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {
+          "ignoreCase": true
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -1080,
+        720
+      ],
+      "id": "cae1d487-4046-4764-843d-fb4f2ca9b220",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "chatId": "6325033152",
+        "text": "={{ $json.error }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -840,
+        -200
+      ],
+      "id": "4d461fca-a462-42d3-acfe-87b777f87fe7",
+      "name": "Telegram1",
+      "webhookId": "40355880-5e55-4b74-8d38-4c18ffe5222e",
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "gia vang",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "b37cedf0-d9e2-417a-8839-ad35bebc5e03"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "8e1cc543-8703-42c7-9ceb-67fa7dae3ef0",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "ty gia",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1551501e-c804-4551-bac9-699d156b30ba",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "tong hop",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "484ca649-8233-4ad9-8bb0-141c82ad1b5c",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "bitcoin",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {
+          "allMatchingOutputs": false
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -600,
+        500
+      ],
+      "id": "2ee7a355-bac1-436a-932e-cd9990fa1aa8",
+      "name": "Switch",
+      "notesInFlow": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://api.api-ninjas.com/v1/commodityprice?name=gold",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Api-Key",
+              "value": "gYh3xkLcXZ5soaWiHS+MwQ==iyMmSScZc41SjUes"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        140,
+        -200
+      ],
+      "id": "c2c0d29b-6164-426c-8548-57c1994a6fc0",
+      "name": "HTTP Request5"
+    },
+    {
+      "parameters": {
+        "url": "https://api.api-ninjas.com/v1/bitcoin",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Api-Key",
+              "value": "gYh3xkLcXZ5soaWiHS+MwQ==iyMmSScZc41SjUes"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -60,
+        1040
+      ],
+      "id": "eb4a8cd3-4b5d-4a02-ac3e-8dcf7fc37111",
+      "name": "HTTP Request6"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst price = parseFloat($json.price);\nreturn {price};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        1040
+      ],
+      "id": "2400d458-f531-4615-8472-993359636346",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst USD_to_VND = parseFloat($json.usdToVndRate.Buy.replace(/,/g,''));\nreturn { USD_to_VND }\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        620,
+        620
+      ],
+      "id": "dcd8a824-c32f-4c7a-a80b-c8ab536f8843",
+      "name": "Code5"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        1200,
+        580
+      ],
+      "id": "0dad13a6-8b0c-4007-aaf0-178c9ee83fa7",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy dữ liệu từ input\nconst usdToVnd = $input.all()[0].json.USD_to_VND; // Lấy từ Output 1\nconst price = $input.all()[1]?.json.price;         // Lấy từ Output 2\n\nconst multiplication  = Number((usdToVnd * price).toFixed(2));\nconst result  = {usdToVnd, price, multiplication};\nreturn {result};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        560
+      ],
+      "id": "ef726d0b-4926-4ab9-8340-1a471d32f230",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7cd873c9-0276-4107-bbd5-66984e4ee06a",
+              "name": "message",
+              "value": "={{ \"Bitcoin: \" + ($json.result.price) +\" USD\" +\"\\t\\t\"+ \"tuong duong: \" + ($json.result.multiplication) + \" VND\" + \"\\n\" + \"Ty gia USD: \" + ($json.result.usdToVnd) + \"VND\" }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1780,
+        560
+      ],
+      "id": "0b1c5d5a-b4e9-491d-828f-4d8d14960f1f",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        760,
+        140
+      ],
+      "id": "74d9eab2-ea67-44cd-ab54-f410770f7a48",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0f6165b8-8256-4d70-bcb9-686763d0e372",
+              "name": "message",
+              "value": "={{\"Gia vang quoc te: \"+( $json.result.price )+\" USD/ounce\" + \"\\t tuong duong: \"+( $json.result.price * $json.result.USD_to_VND / 0.829426 ).toFixed(0)+\" VND/1L \" +\"\\n\" + \"Gia vang SJC \" + ($json.result.Address) +\":\\n\"+\"\\tMua vao: \"+ ($json.result.BuyValue)+\" VND/1L\" +\"\\n\\tBan ra: \"+ ($json.result.SellValue)+\" VND/1L\" +\"\\n\"+\"Checnh lech gia vang trong nuoc(SJC) so voi quoc te: \"+ ($json.result.SellValue - ( $json.result.price * $json.result.USD_to_VND / 0.829426 ).toFixed(0)) + \" VND\"}} ",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1340,
+        140
+      ],
+      "id": "13b2f703-1ab1-423c-9a73-126f79c7dd4a",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst price = $input.all()[0].json.price;\nconst USD_to_VND =  $input.all()[2].json.USD_to_VND;\nconst SellValue=$input.all()[1].json.SellValue;\nconst BuyValue=$input.all()[1].json.BuyValue;\nconst Address=$input.all()[1].json.BranchName;\nconst result = {price, SellValue, BuyValue, Address,USD_to_VND }\nreturn {result};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        980,
+        140
+      ],
+      "id": "ccf47e5a-356f-4f8e-b7e1-d03ff88259a0",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "url": "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx?b=10",
+        "options": {
+          "response": {}
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        20,
+        320
+      ],
+      "id": "927ea351-8019-422c-b7f1-86784245e519",
+      "name": "HTTP Request7",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {
+        "options": {
+          "attrkey": "=$ {{ $json.data }}",
+          "explicitRoot": false,
+          "mergeAttrs": true
+        }
+      },
+      "name": "XML1",
+      "type": "n8n-nodes-base.xml",
+      "position": [
+        220,
+        320
+      ],
+      "typeVersion": 1,
+      "id": "d98b22b8-3fd9-4052-8de4-a92119cad8c5",
+      "retryOnFail": false,
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst rates = $json.Exrate;\n// const time = $json.DateTime;\nconst usdToVndRate = rates.find(rate =>(rate.CurrencyCode === 'USD'));\nconst USD_to_VND = parseFloat(usdToVndRate.Sell.replace(/,/g,\"\"));\nreturn {\n  USD_to_VND\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        420,
+        320
+      ],
+      "id": "dc33a8a0-60ac-4396-a11e-956bbf66d7c8",
+      "name": "Code7",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "content": "## GET USD to VND",
+        "height": 200,
+        "width": 1040,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -220,
+        580
+      ],
+      "typeVersion": 1,
+      "id": "e48cc3ce-bd0d-4587-9b18-670da5bcbefd",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## GET GOLD\n",
+        "height": 720,
+        "width": 1940
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -320,
+        -240
+      ],
+      "typeVersion": 1,
+      "id": "bd687b66-ca31-4958-ad60-0fed35093736",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## GET BITCOIN\n",
+        "height": 200,
+        "width": 640,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -120,
+        1000
+      ],
+      "typeVersion": 1,
+      "id": "31da6ffa-a3ac-4c0b-b2ef-2fff2085c720",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2060,
+        1160
+      ],
+      "id": "4fd46778-5430-4232-9106-0dd081995391",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "includeOtherFields": true,
+        "include": "selected",
+        "includeFields": "message.text, callback_query.data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1640,
+        720
+      ],
+      "id": "87af76a9-f23d-4bc7-ae6d-c86e3dc4516c",
+      "name": "Edit Fields3",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "command": "echo \"test\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -1600,
+        1300
+      ],
+      "id": "a69e10c9-9398-49c2-bbb0-55be82b64bbe",
+      "name": "Execute Command"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8",
+          "mode": "list",
+          "cachedResultName": "testn8n",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Trang tính1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "chat_id": "={{ $json.message.chat.id }}",
+            "mesage": "={{ $json.message.text }}",
+            "timestamp": "={{ $json.message.date }}",
+            "option_selected": "={{ $json.message.from.is_bot }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "chat_id",
+              "displayName": "chat_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "mesage",
+              "displayName": "mesage",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "option_selected",
+              "displayName": "option_selected",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp",
+              "displayName": "timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        -1560,
+        200
+      ],
+      "id": "fb1a5a68-497b-4aeb-ba77-a9f42a214a2b",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b25UiTDkz6EL5SCd",
+          "name": "Google Sheets account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8",
+          "mode": "list",
+          "cachedResultName": "testn8n",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Trang tính1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1UkOUB6sSnYoEDWEh731v_edtopPFNDDaF5KiMQddR_8/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "chat_id",
+              "lookupValue": "={{ $json.message.text }}"
+            }
+          ]
+        },
+        "options": {
+          "outputFormatting": {
+            "values": {
+              "general": "UNFORMATTED_VALUE",
+              "date": "FORMATTED_STRING"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        -1700,
+        -20
+      ],
+      "id": "7ddcb42d-94e6-4fb2-962e-cf5bc21ffa01",
+      "name": "Google Sheets1",
+      "alwaysOutputData": false,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b25UiTDkz6EL5SCd",
+          "name": "Google Sheets account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    }
+  ],
+  "pinData": {
+    "HTTP Request4": [
+      {
+        "json": {
+          "data": "\r\n\r\n\t<!DOCTYPE html>\r\n\t<html id=\"ctl00_Html1\" lang=\"vi\">\r\n\r\n\t<head id=\"ctl00_Head1\"><title>\r\n\tBiểu Đồ Giá Vàng - CÔNG TY TNHH MTV VÀNG BẠC ĐÁ QUÝ SÀI GÒN - SJC\r\n</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<meta property=\"og:title\" content=\"Biểu Đồ Giá Vàng\" />\n<meta property=\"og:site_name\" content=\"SJC\" />\n<meta itemprop=\"name\" content=\"Biểu Đồ Giá Vàng\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"Tìm kiếm SJC\" href=\"https://sjc.com.vn:443/SearchEngineInfo.ashx\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" /><link rel='shortcut icon' href='/Data/Sites/1/skins/default/favicon.ico' />\r\n\t\t<!-- link font google-->\r\n\t\t<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" /><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\" /><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap\" />\r\n\t\t<!-- link css-->\r\n\t\t<link rel=\"stylesheet\" href=\"/Data/Sites/1/skins/default/css/global.min.css?v=10.1.2\" /><link rel=\"stylesheet\" href=\"/Data/Sites/1/skins/default/css/main.min.css?v=10.1.2\" /><link rel=\"stylesheet\" href=\"/Data/Sites/1/skins/default/css/comment.css\" /><link rel=\"stylesheet\" href=\"/Data/Sites/1/skins/default/css/account.css\" />\r\n\t\t<style>\r\n\t\t\t.zalo-chat-widget{\r\n\t\t\t\tbottom: 100px !important;\r\n\t\t\t\tright: 25px !important;\r\n\t\t\t}\r\n\t\t</style>\r\n\r\n<!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-JM090DV136\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n  gtag('config', 'G-JM090DV136');\r\n</script>\r\n\r\n\t<link rel=\"canonical\" href=\"https://sjc.com.vn:443/bieu-do-gia-vang\" /></head>\r\n\r\n\t<body id=\"ctl00_Body\" class=\"canhcam ketoan chart-page vi-vn\">\r\n\t\t\r\n\t\t\r\n\t\t<form method=\"post\" action=\"/bieu-do-gia-vang\" id=\"aspnetForm\">\r\n<input type=\"hidden\" name=\"__VIEWSTATEFIELDCOUNT\" id=\"__VIEWSTATEFIELDCOUNT\" value=\"3\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKMTk3NjY2MTIwNw8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIBDxYCHgRsYW5nBQJ2aRYCAgMPFgIeBWNsYXNzBR9jYW5oY2FtIGtldG9hbiBjaGFydC1wYWdlIHZpLXZuFgICBQ9kFhACDw9kFgJmD2QWAmYPZBYCZg8PFgQeCENzc0NsYXNzBRpzZWFyY2hib3ggcHJvZHVjdHNlYXJjaGJveB4EXyFTQgICFgIeCHNpdGVyb290BRZodHRwczovL3NqYy5jb20udm46NDQzFgICAQ8PFgYeB1Rvb2xUaXAFC1TDrG0ga2nhur9tHwMFC3NlYXJjaGlucHV0HwQCAhYEHgxhdXRvY29tcGxldGUFA29mZh4LcGxhY2Vob2xkZXIFC1TDrG0ga2nhur9tZAIXDw8WBB8DBRNhbHRjb250ZW50MSBjbXN6b25lHwQCAmRkAhkPDxYGHwMFEGxlZnRzaWRlIGNt\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE1\" id=\"__VIEWSTATE1\" value=\"c3pvbmUfBAICHgdWaXNpYmxlaGRkAhsPDxYEHwMFEG1pZGRsZS1mdWxsd2lkdGgfBAICZBYCAgEPZBYCAgQPZBYCZg8PFgIfCWdkZAIdDw8WBh8DBRFyaWdodHNpZGUgY21zem9uZR8EAgIfCWhkZAIfDw8WBh8DBRNhbHRjb250ZW50MiBjbXN6b25lHwQCAh8JaGRkAikPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgICAQ9kFgQCAw9kFgYCAQ8PFgIfBgUlTmjhuq1wIMSR4buLYSBjaOG7iSBlbWFpbCBo4bujcCBs4buHLhYCHwgFEsSQ4buLYSBjaOG7iSBlbWFpbGQCBw8PFgQeD1ZhbGlkYXRpb25Hcm91cAUNc3Vic2NyaWJlMTM1Mh4MRXJyb3JNZXNzYWdlBRdWdWkgbMOybmcgbmjhuq1wIGVtYWlsLmRkAgkPDxYGHwoFDXN1YnNjcmliZTEzNTIeFFZhbGlkYXRpb25F\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE2\" id=\"__VIEWSTATE2\" value=\"eHByZXNzaW9uBVxeKFswLTlhLXpBLVpdKFsnLS5cd10qW18wLTlhLXpBLVpdKSpAKChbMC05YS16QS1aXSkrKFstXHcnXSpbMC05YS16QS1aXSkqXC4pK1thLXpBLVpdezIsOX0pJB8LBRhFbWFpbCBraMO0bmcgaOG7o3AgbOG7hy5kZAIFD2QWAgIBDxYCHgRUZXh0BRjEkMSDbmcga8O9IHRow6BuaCBjw7RuZy5kAjEPDxYCHwloZGRk2NTTXg2c1bNjn5rB1rOXCMLJG7o=\" />\r\n\r\n\r\n<script src=\"http://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjax.js\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\n(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type=\"text/javascript\" src=\"/ScriptResource.axd?d=RDCFDwtfUAtMG1X5qIeCssskucAWqfq0YoEV47-GDfoOfjomp8YzcWsN7RwaVfGBzg9gEkldMCekTIfr8QZtz8hqttE52v6crmlzwEA_XAgKlBcJnLUKZze5XDl1PmupKTHbdxnRimzbudjb8DyumXKQ5bo1&t=2a9d95e3\"><\\/script>');//]]>\r\n</script>\r\n\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t<header class=\"bg-white fixed top-0 left-0 right-0 w-full z-1000 py-3 shadow xl:py-0\">\r\n\t\t\t\t<div class=\"container flex items-center justify-between\">\r\n\t\t\t\t\t<div class=\"header-left hidden xl:flex xl:flex-col xl:justify-between xl:flex-1\">\r\n\t\t\t\t\t\t<!-- Header - Phone -->\r\n\t\t\t\t\t\t<div class=\"button-hotline text-base font-normal leading-normal text-primary uppercase relative\"><div class='Module Module-1342'><div class='ModuleContent'><a class=\"inline-flex items-center space-x-2.5\" href=\"tel: 028 3929 3388\"><em class=\"fa-light fa-phone-volume leading-none text-2xl\"></em><span>028 3929\n3388</span></a></div></div></div>\r\n\r\n\t\t\t\t\t\t<!-- Header - Menu Left -->\r\n\t\t\t\t\t\t<nav class=\"navbar-menu\"><div class='Module Module-1343'><div class='ModuleContent'><ul class=\"main-menu\">\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/\" title=\"Trang Chủ\" target=\"_self\">Trang Chủ</a>\r\n  </li>\r\n  <li class=\"has-mega-menu\">\r\n    <a class=\"\" href=\"#\" title=\"Sản Phẩm - Dịch Vụ\" target=\"_self\">Sản Phẩm - Dịch Vụ</a>\r\n    <i class=\"fa-light fa-chevron-down mega-icon\">\r\n    </i>\r\n    <div class=\"mega-menu\">\r\n      <div class=\"container\">\r\n        <ul class=\"menu-list-lv1\">\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-mieng-vang-nhan-sjc\" title=\"Vàng Miếng &amp; Vàng Nhẫn SJC\" target=\"_self\">Vàng Miếng & Vàng Nhẫn SJC</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1\" title=\"Nữ Trang SJC\" target=\"_self\">Nữ Trang SJC</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/bong-tai\" title=\"Bông Tai\" target=\"_self\">Bông Tai</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/mat-day\" title=\"Mặt Dây\" target=\"_self\">Mặt Dây</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/nhan-nam\" title=\"Nhẫn Nam\" target=\"_self\">Nhẫn Nam</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/nhan-nu\" title=\"Nhẫn Nữ\" target=\"_self\">Nhẫn Nữ</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/vong-tay\" title=\"Vòng &amp; Lắc\" target=\"_self\">Vòng & Lắc</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/collier\" title=\"Collier\" target=\"_self\">Collier</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/trang-suc-bo\" title=\"Trang Sức Bộ\" target=\"_self\">Trang Sức Bộ</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi\" title=\"Trang Sức Cưới\" target=\"_self\">Trang Sức Cưới</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/bo-nu-trang-cuoi\" title=\"Bộ Trang Sức Cưới\" target=\"_self\">Bộ Trang Sức Cưới</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/nhan-dinh-hon\" title=\"Nhẫn Đính Hôn\" target=\"_self\">Nhẫn Đính Hôn</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/nhan-cuoi\" title=\"Nhẫn Cưới\" target=\"_self\">Nhẫn Cưới</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99\" title=\"Nữ Trang 99%\" target=\"_self\">Nữ Trang 99%</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99/bong-tai-3\" title=\"Bông Tai\" target=\"_self\">Bông Tai</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99/nhan-nam-99\" title=\"Nhẫn Nam\" target=\"_self\">Nhẫn Nam</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99/nhan-nu-99\" title=\"Nhẫn Nữ\" target=\"_self\">Nhẫn Nữ</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99/kieng-co\" title=\"Kiềng Cổ\" target=\"_self\">Kiềng Cổ</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99/vong-lac\" title=\"Vòng &amp; Lắc\" target=\"_self\">Vòng & Lắc</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-ngoc-trai\" title=\"Trang Sức Ngọc Trai\" target=\"_self\">Trang Sức Ngọc Trai</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"#\" title=\"Vàng May Mắn\" target=\"_self\">Vàng May Mắn</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-may-man/vang-than-tai\" title=\"Vàng Thần Tài\" target=\"_self\">Vàng Thần Tài</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-may-man/12-con-giap-2d-3d\" title=\"Vàng con giáp 2D &amp; 3D\" target=\"_self\">Vàng con giáp 2D & 3D</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"#\" title=\"Tượng Vàng 24K\" target=\"_self\">Tượng Vàng 24K</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-may-man/vong-tay-charm\" title=\"Charm\" target=\"_self\">Charm</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-tang-pham\" title=\"Vàng Tặng Phẩm\" target=\"_self\">Vàng Tặng Phẩm</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1\" title=\"Trang Sức Kim Cương\" target=\"_self\">Trang Sức Kim Cương</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/bong-tai-4\" title=\"Bông Tai\" target=\"_self\">Bông Tai</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/mat-day-1\" title=\"Mặt Dây\" target=\"_self\">Mặt Dây</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/nhan-2\" title=\"Nhẫn\" target=\"_self\">Nhẫn</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/vong-lac-1\" title=\"Vòng &amp; Lắc\" target=\"_self\">Vòng & Lắc</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/bo-kim-cuong\" title=\"Bộ Kim Cương\" target=\"_self\">Bộ Kim Cương</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/vo-kim-cuong\" title=\"Vỏ Kim Cương\" target=\"_self\">Vỏ Kim Cương</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/kim-cuong-vien\" title=\"Kim Cương Viên\" target=\"_self\">Kim Cương Viên</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/ep-lai-bao-bi-vang-mieng-vang-nhan-sjc\" title=\"Dịch Vụ\" target=\"_self\">Dịch Vụ</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/kiem-dinh-chat-luong-vang-1\" title=\"Kiểm Định Chất Lượng Vàng\" target=\"_self\">Kiểm Định Chất Lượng Vàng</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/ep-bao-bi-vang-mieng-sjc\" title=\"Ép Bao Bì Vàng Miếng SJC\" target=\"_self\">Ép Bao Bì Vàng Miếng SJC</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dong-ho\" title=\"Đồng Hồ\" target=\"_self\">Đồng Hồ</a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cua-hang-dai-ly/he-thong-cua-hang\" title=\"Cửa Hàng - Đại Lý\" target=\"_self\">Cửa Hàng - Đại Lý</a>\r\n  </li>\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cham-soc-khach-hang/chinh-sach-hau-mai-khach-le\" title=\"Chăm Sóc Khách Hàng\" target=\"_self\">Chăm Sóc Khách Hàng</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cham-soc-khach-hang/cham-soc-khach-hang-1\" title=\"Chăm Sóc Khách Hàng\" target=\"_self\">Chăm Sóc Khách Hàng</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cham-soc-khach-hang/chinh-sach-hau-mai-khach-le\" title=\"Chính Sách Hậu Mãi Khách Lẻ\" target=\"_self\">Chính Sách Hậu Mãi Khách Lẻ</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"#\" title=\"Chính Sách Hậu Mãi Khách Sỉ\" target=\"_self\">Chính Sách Hậu Mãi Khách Sỉ</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://www8.sjc.com.vn/Login.aspx\" title=\"Xem Điểm Thành Viên\" target=\"_blank\">Xem Điểm Thành Viên</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n</ul></div></div></nav>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<!-- Header - Logo -->\r\n\t\t\t\t\t<div class='header-center xl:px-15 2xl:px-25 Module Module-1345'><div class='ModuleContent'><a href=\"/\"><img class=\"w-full h-full object-contain\" src=\"/Data/Sites/1/media/img/logo.png\" alt=\"logo\" /></a></div></div>\r\n\r\n\t\t\t\t\t<div\r\n\t\t\t\t\t\tclass=\"header-right flex items-center md:relative md:justify-end md:ml-10 xl:w-full xl:static xl:ml-0 xl:flex xl:flex-col xl:justify-between xl:flex-1\">\r\n\t\t\t\t\t\t<div class=\"search-wrap mr-5 xl:relative xl:flex xl:justify-end xl:w-full\">\r\n\t\t\t\t\t\t\t<!-- Header - Search -->\r\n\t\t\t\t\t\t\t<div class='w-1/2 Module Module-1346'><div id='ctl00_mdl1346_ctl00_Search_pnlSearch' class='searchbox productsearchbox'>\n\r\n    <input name=\"ctl00$mdl1346$ctl00$Search$txtSearch\" type=\"text\" id=\"ctl00_mdl1346_ctl00_Search_txtSearch\" title=\"Tìm kiếm\" class=\"searchinput\" autocomplete=\"off\" placeholder=\"Tìm kiếm\" />\r\n    \r\n    <button onclick=\"__doPostBack('ctl00$mdl1346$ctl00$Search$btnSearch','')\" id=\"ctl00_mdl1346_ctl00_Search_btnSearch\" class=\"searchbutton\">\r\n        <i class=\"fa-light fa-magnifying-glass\"></i>\r\n    </button>\r\n\n</div></div>\r\n\r\n\t\t\t\t\t\t\t<div\r\n\t\t\t\t\t\t\t\tclass=\"button-search w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full text-lg cursor-pointer xl:w-7.5 xl:h-7.5 xl:text-base\">\r\n\t\t\t\t\t\t\t\t<i class=\"fa-light fa-magnifying-glass\"></i>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"button-language\">\r\n\t\t\t\t\t\t\t\t<!-- Header - Language -->\r\n\t\t\t\t\t\t\t\t<div class='Module Module-1433'></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<!-- Header - Menu Right -->\r\n\t\t\t\t\t\t<nav class=\"navbar-menu hidden xl:block \"><div class='Module Module-1344'><div class='ModuleContent'><ul class=\"main-menu\">\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/gioi-thieu\" title=\"Giới Thiệu\" target=\"_self\">Giới Thiệu</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-1\" title=\"Lịch Sử Phát Triển\" target=\"_self\">Lịch Sử Phát Triển</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-2\" title=\"Thành Tích - Giải Thưởng\" target=\"_self\">Thành Tích - Giải Thưởng</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-3\" title=\"Sơ Đồ Tổ Chức\" target=\"_self\">Sơ Đồ Tổ Chức</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cong-bo-thong-tin\" title=\"Công Bố Thông Tin\" target=\"_self\">Công Bố Thông Tin</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin/bao-cao-tai-chinh\" title=\"Báo Cáo Tài Chính\" target=\"_self\">Báo Cáo Tài Chính</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin/cong-bo-tt-theo-nghi-dinh-61\" title=\"Công Bố TT Theo Nghị Định 61\" target=\"_self\">Công Bố TT Theo Nghị Định 61</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin/tai-lieu-cong-ty-1\" title=\"Tài Liệu Công Ty\" target=\"_self\">Tài Liệu Công Ty</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin/cong-bo-thong-tin-theo-nghi-dinh-47\" title=\"Công Bố Thông Tin Theo Nghị Định 47\" target=\"_self\">Công Bố Thông Tin Theo Nghị Định 47</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/tin-tuc\" title=\"Tin Tức\" target=\"_self\">Tin Tức</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/tin-tuc-sjc\" title=\"Tin Tức SJC\" target=\"_self\">Tin Tức SJC</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/tin-khuyen-mai\" title=\"Tin Khuyến Mãi\" target=\"_self\">Tin Khuyến Mãi</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/tin-thi-truong\" title=\"Tin Thị Trường Vàng\" target=\"_self\">Tin Thị Trường Vàng</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/kien-thuc-trang-suc\" title=\"Kiến Thức Nữ Trang\" target=\"_self\">Kiến Thức Nữ Trang</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/hoat-dong-dang-doan-the\" title=\"Hoạt Động Đảng - Đoàn Thể\" target=\"_self\">Hoạt Động Đảng - Đoàn Thể</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/hoat-dong-cong-dong\" title=\"Hoạt Động Cộng Đồng\" target=\"_self\">Hoạt Động Cộng Đồng</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc/hoi-cho-quoc-te-trang-suc-viet-nam-vijf\" title=\"Hội Chợ Quốc tế Trang sức Việt Nam - VIJF\" target=\"_self\">Hội Chợ Quốc tế Trang sức Việt Nam - VIJF</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/tuyen-dung\" title=\"Tuyển Dụng\" target=\"_self\">Tuyển Dụng</a>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/lien-he\" title=\"Liên Hệ\" target=\"_self\">Liên Hệ</a>\r\n  </li>\r\n</ul></div></div></nav>\r\n\r\n\t\t\t\t\t\t<button class=\"z-11 xl:hidden\" id=\"buttonMenu\" type=\"button\"><span class=\"line\"></span><span\r\n\t\t\t\t\t\t\t\tclass=\"line\"></span><span class=\"line\"></span>\r\n\t\t\t\t\t\t\t<div id=\"pulseMe\">\r\n\t\t\t\t\t\t\t\t<div class=\"bar left\"></div>\r\n\t\t\t\t\t\t\t\t<div class=\"bar top\"></div>\r\n\t\t\t\t\t\t\t\t<div class=\"bar right\"></div>\r\n\t\t\t\t\t\t\t\t<div class=\"bar bottom\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"header-pin hidden fixed top-0 left-0 right-0 w-full bg-white pointer-events-none opacity-0 -translate-y-full z-999 xl:block xl:shadow-news xl:transition-transform xl:duration-300 xl:ease-linear\">\r\n\t\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t\t<!-- Header - Main Menu -->\r\n\t\t\t\t\t\t<nav class=\"navbar-menu\"><div class='Module Module-1347'><div class='ModuleContent'><ul class=\"main-menu\">\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/\" title=\"Trang Chủ\" target=\"_self\">Trang Chủ</a>\r\n  </li>\r\n  <li class=\"has-mega-menu\">\r\n    <a class=\"\" href=\"#\" title=\"Sản Phẩm - Dịch Vụ\" target=\"_self\">Sản Phẩm - Dịch Vụ</a>\r\n    <i class=\"fa-light fa-chevron-down mega-icon\">\r\n    </i>\r\n    <div class=\"mega-menu\">\r\n      <div class=\"container\">\r\n        <ul class=\"menu-list-lv1\">\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-mieng-vang-nhan-sjc\" title=\"Vàng Miếng &amp; Vàng Nhẫn SJC\" target=\"_self\">Vàng Miếng & Vàng Nhẫn SJC</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1\" title=\"Nữ Trang SJC\" target=\"_self\">Nữ Trang SJC</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/bong-tai\" title=\"Bông Tai\" target=\"_self\">Bông Tai</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/mat-day\" title=\"Mặt Dây\" target=\"_self\">Mặt Dây</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/nhan-nam\" title=\"Nhẫn Nam\" target=\"_self\">Nhẫn Nam</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/nhan-nu\" title=\"Nhẫn Nữ\" target=\"_self\">Nhẫn Nữ</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/vong-tay\" title=\"Vòng &amp; Lắc\" target=\"_self\">Vòng & Lắc</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/collier\" title=\"Collier\" target=\"_self\">Collier</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1/trang-suc-bo\" title=\"Trang Sức Bộ\" target=\"_self\">Trang Sức Bộ</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi\" title=\"Trang Sức Cưới\" target=\"_self\">Trang Sức Cưới</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/bo-nu-trang-cuoi\" title=\"Bộ Trang Sức Cưới\" target=\"_self\">Bộ Trang Sức Cưới</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/nhan-dinh-hon\" title=\"Nhẫn Đính Hôn\" target=\"_self\">Nhẫn Đính Hôn</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi/nhan-cuoi\" title=\"Nhẫn Cưới\" target=\"_self\">Nhẫn Cưới</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99\" title=\"Nữ Trang 99%\" target=\"_self\">Nữ Trang 99%</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-ngoc-trai\" title=\"Trang Sức Ngọc Trai\" target=\"_self\">Trang Sức Ngọc Trai</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"#\" title=\"Vàng May Mắn\" target=\"_self\">Vàng May Mắn</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-tang-pham\" title=\"Vàng Tặng Phẩm\" target=\"_self\">Vàng Tặng Phẩm</a>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1\" title=\"Trang Sức Kim Cương\" target=\"_self\">Trang Sức Kim Cương</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/bo-kim-cuong\" title=\"Bộ Kim Cương\" target=\"_self\">Bộ Kim Cương</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/vo-kim-cuong\" title=\"Vỏ Kim Cương\" target=\"_self\">Vỏ Kim Cương</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1/kim-cuong-vien\" title=\"Kim Cương Viên\" target=\"_self\">Kim Cương Viên</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/san-pham-phong-thuy\" title=\"Sản Phẩm Phong Thủy\" target=\"_self\">Sản Phẩm Phong Thủy</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/san-pham-phong-thuy/tranh-phong-thuy\" title=\"Tranh Phong Thủy\" target=\"_self\">Tranh Phong Thủy</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/san-pham-phong-thuy/tuong-phong-thuy\" title=\"Tượng Phong Thủy\" target=\"_self\">Tượng Phong Thủy</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <li>\r\n            <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/ep-lai-bao-bi-vang-mieng-vang-nhan-sjc\" title=\"Dịch Vụ\" target=\"_self\">Dịch Vụ</a>\r\n            <ul class=\"menu-list-lv2\">\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/kiem-dinh-chat-luong-vang-1\" title=\"Kiểm Định Chất Lượng Vàng\" target=\"_self\">Kiểm Định Chất Lượng Vàng</a>\r\n              </li>\r\n              <li>\r\n                <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/dich-vu/ep-bao-bi-vang-mieng-sjc\" title=\"Ép Bao Bì Vàng Miếng SJC\" target=\"_self\">Ép Bao Bì Vàng Miếng SJC</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cua-hang-dai-ly/he-thong-cua-hang\" title=\"Cửa Hàng - Đại Lý\" target=\"_self\">Cửa Hàng - Đại Lý</a>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cham-soc-khach-hang/chinh-sach-hau-mai-khach-le\" title=\"Chăm Sóc Khách Hàng\" target=\"_self\">Chăm Sóc Khách Hàng</a>\r\n  </li>\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/gioi-thieu\" title=\"Giới Thiệu\" target=\"_self\">Giới Thiệu</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-1\" title=\"Lịch Sử Phát Triển\" target=\"_self\">Lịch Sử Phát Triển</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-2\" title=\"Thành Tích - Giải Thưởng\" target=\"_self\">Thành Tích - Giải Thưởng</a>\r\n        </li>\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-3\" title=\"Sơ Đồ Tổ Chức\" target=\"_self\">Sơ Đồ Tổ Chức</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n  <li class=\"has-dropdown-menu\">\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/cong-bo-thong-tin\" title=\"Công Bố Thông Tin\" target=\"_self\">Công Bố Thông Tin</a>\r\n    <i class=\"fa-light fa-chevron-down dropdown-icon\">\r\n    </i>\r\n    <div class=\"dropdown-menu\">\r\n      <ul class=\"menu-list\">\r\n        <li>\r\n          <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin/bao-cao-tai-chinh\" title=\"Báo Cáo Tài Chính\" target=\"_self\">Báo Cáo Tài Chính</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/doi-tac\" title=\"Đối Tác\" target=\"_self\">Đối Tác</a>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/tin-tuc\" title=\"Tin Tức\" target=\"_self\">Tin Tức</a>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/tuyen-dung\" title=\"Tuyển Dụng\" target=\"_self\">Tuyển Dụng</a>\r\n  </li>\r\n  <li>\r\n    <a class=\"\" href=\"https://sjc.com.vn:443/lien-he\" title=\"Liên Hệ\" target=\"_self\">Liên Hệ</a>\r\n  </li>\r\n</ul></div></div></nav>\r\n\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"mobile-wrap flex flex-col justify-between absolute top-0 left-0 view-h-full w-full p-5 pt-32 bg-white/95 shadow -z-1 backdrop-blur-15 opacity-0 -translate-x-full transition-all duration-300 ease-linear pointer-events-none xl:hidden\">\r\n\t\t\t\t\t<div class=\"navbar-wrap\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t</header>\r\n\r\n\t\t\t<main>\r\n\t\t\t\t<div id=\"ctl00_divAlt1\" class=\"altcontent1 cmszone\">\r\n\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<section class=\"global-breadcrumb pt-32 xl:pt-32\"><div class='container Module Module-1360'><ol class='breadcrumb' itemscope='' itemtype='http://schema.org/BreadcrumbList'>\r\n    \r\n            <li itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem'><a href='https://sjc.com.vn:443' class='itemcrumb' itemprop='item'  itemtype='http://schema.org/Thing'><span itemprop='name'>Trang chủ</span></a><meta itemprop='position' content='0'></li>\r\n        \r\n            <li itemprop='itemListElement' itemscope='' itemtype='http://schema.org/ListItem'><a href='https://sjc.com.vn:443/bieu-do-gia-vang' class='itemcrumb active' itemprop='item'  itemtype='http://schema.org/Thing'><span itemprop='name'>Biểu Đồ Giá Vàng</span></a><meta itemprop='position' content='1'></li>\r\n        \r\n    \r\n</ol></div></section>\r\n\t\t\t\t\r\n</div>\r\n\t\t\t\t\r\n\t\t\t\t<div id=\"ctl00_divCenter\" class=\"middle-fullwidth\">\r\n\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<section class=\"chart-section py-15 bg-white xl:pt-7.5 xl:pb-23\"> \t\t\t\t\t<div class=\"container\"><div class='Module Module-1414'><div class='ModuleContent'><h1 class=\"global-title normal text-center\">Biểu đồ giá vàng</h1></div></div><div class=\"row\"><div class='col w-full mt-7.5 md:w-1/2 sjc-price-by-date Module Module-1415'><div class='ModuleContent'><h2 class=\"secondary-title\">Tra cứu giá vàng SJC</h2>\n<div class=\"date-search flex items-center mt-6 space-x-2.5\">\n<div class=\"date-input relative w-full max-w-[calc(360/1920*100rem)] text-gray-2 flex items-center justify-between space-x-2.5\">\n<input class=\"w-full pl-6 py-1 pr-5.5 h-10 border border-solid border-black text-tiny\" id=\"datesearch\" value=\"23/10/2022\" type=\"text\" name=\"datesearch\" /><em class=\"fa-regular fa-calendar leading-none text-base absolute top-1/2 -translate-y-1/2 right-2.5 z-1 pointer-events-none\"></em>\n</div>\n<button class=\"button-datesearch h-10 bg-primary border border-primary text-center w-[calc(124/1920*100rem)] min-w-[calc(124/1920*100rem)] text-base text-white font-medium\" type=\"button\">Tra cứu</button>\n</div>\n<div class=\"date-table border border-[#E5E5E5] mt-5 p-5\">\n<h3 class=\"text-bold text-tiny uppercase leading-[calc(16/14)] text-black mb-0.5\">BẢNG GIÁ VÀNG SJC NGÀY <span class=\"current-date\"></span></h3>\n<div class=\"table-scroll custom-scroll max-h-[calc(400/1920*100rem)] overflow-y-auto pr-5\">\n<table class=\"w-full\">\n    <thead>\n        <tr>\n            <th>#</th>\n            <th>Loại (nghìn đồng/ lượng)</th>\n            <th>Mua</th>\n            <th>Bán</th>\n        </tr>\n    </thead>\n    <tbody>\n    </tbody>\n</table>\n</div>\n</div>\n<div class=\"chart-gold-global-wrap\">\n<h2 class=\"secondary-title\">Giá vàng Thế giới</h2>\n<div class=\"chart-gold-global\">&nbsp;</div>\n</div></div></div><div class='col w-full mt-7.5 md:w-1/2 Module Module-1416'><div class='ModuleContent'><div class=\"box-sjc-price bg-gray-6 p-5 overflow-hidden xl:pt-[calc(25/1920*100rem)] xl:pb-9 sjc-gold-price-chart\">\n<h2 class=\"secondary-title\">Biểu đồ giá vàng hôm nay</h2>\n<div class=\"flex justify-between items-center flex-wrap mt-5 \">\n<div class=\"mt-2.5 bg-[#EBECEF] py-1.5 px-2.5 min-w-[calc(200/1920*100rem)] text-black text-tiny leading-[1.29] font-normal space-x-1.75\" id=\"reportrange\"><span></span><em class=\"fa-light fa-angle-down leading-none text-base\"></em></div>\n<select class=\"mt-2.5 bg-[#EBECEF] py-1.5 pl-2.5 pr-10 text-black text-tiny leading-[1.29] font-normal border-none\" id=\"select-province\" name=\"province\"></select>\n</div>\n<div class=\"sjc-chart mt-2.5 p-2.5 bg-white overflow-hidden\">\n<canvas id=\"gold-price-chart\" width=\"630\" height=\"393\"></canvas>\n</div>\n</div></div></div></div><div class='hidden Module Module-1417'><div class='ModuleContent'></div></div></div> \t\t\t\t\t</div> \t\t\t\t</section><div class=\"sjc-gold-tradingview\">\r\n    \r\n    <script type=\"text/javascript\" src=\"https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js\" async>\n  {\n  \"symbol\": \"OANDA:XAUUSD\",\n  \"width\": \"300\",\n  \"height\": \"150\",  \n  \"colorTheme\": \"light\",\n  \"isTransparent\": true,\n  \"locale\": \"vi_VN\"\n\t  \n}\n  </script>\r\n</div>\r\n\t\t\t\t\r\n</div>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"backdrop fixed z-50 w-full h-full top-0 left-0 bg-black/50 pointer-events-none opacity-0 transition-all\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"zalo-chat-widget\" data-oaid=\"1278962738116993574\" data-welcome-message=\"Chào mừng đến với SJC OA\" data-autopopup=\"1\" data-width=\"\" data-height=\"280\"></div>\r\n\t\t\t</main>\r\n\r\n\t\t\t<footer>\r\n\t\t\t\t<div class=\"footer-top bg-white pb-10 xl:pb-17\">\r\n\t\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t\t<div class=\"back-to-top flex-center w-max mx-auto py-5 xl:pt-5.5 xl:pb-3\"><i\r\n\t\t\t\t\t\t\t\tclass=\"fa-light fa-angle-up text-2xl leading-none text-gray-4 cursor-pointer xl:w-6 xl:h-6 xl:hover:text-primary\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"line h-px w-full bg-gray-5 mb-8 xl:mb-16\"></div>\r\n\t\t\t\t\t\t<div class=\"row -mt-5\">\r\n\t\t\t\t\t\t\t<div class=\"col w-full lg:w-2/3 mt-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"row -mt-5\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"col w-1/2 md:w-1/3 xl:w-1/4 mt-5\">\r\n\t\t\t\t\t\t\t\t\t\t<!-- Footer - Menu -->\r\n\t\t\t\t\t\t\t\t\t\t<div class='Module Module-1348'><div class='ModuleContent'><p class=\"footer-title\">Trang Chủ</p>\r\n<ul class=\"footer-menu\">\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-mieng-vang-nhan-sjc\" title=\"Vàng Miếng &amp; Vàng Nhẫn SJC\" target=\"_self\">Vàng Miếng & Vàng Nhẫn SJC</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-sjc-1\" title=\"Nữ Trang SJC\" target=\"_self\">Nữ Trang SJC</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-cuoi\" title=\"Trang Sức Cưới\" target=\"_self\">Trang Sức Cưới</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/nu-trang-99\" title=\"Nữ Trang 99%\" target=\"_self\">Nữ Trang 99%</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-ngoc-trai\" title=\"Trang Sức Ngọc Trai\" target=\"_self\">Trang Sức Ngọc Trai</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"#\" title=\"Vàng May Mắn\" target=\"_self\">Vàng May Mắn</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/vang-tang-pham\" title=\"Vàng Tặng Phẩm\" target=\"_self\">Vàng Tặng Phẩm</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/trang-suc-kim-cuong-1\" title=\"Trang Sức Kim Cương\" target=\"_self\">Trang Sức Kim Cương</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/san-pham-phong-thuy\" title=\"Sản Phẩm Phong Thủy\" target=\"_self\">Sản Phẩm Phong Thủy</a>\r\n  </li>\r\n</ul></div></div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"col w-1/2 md:w-1/3 xl:w-1/4 mt-5\">\r\n\t\t\t\t\t\t\t\t\t\t<!-- Footer - Menu About-->\r\n\t\t\t\t\t\t\t\t\t\t<div class='Module Module-1349'><div class='ModuleContent'><p class=\"footer-title\">Trang Chủ</p>\r\n<ul class=\"footer-menu\">\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-1\" title=\"Lịch Sử Phát Triển\" target=\"_self\">Lịch Sử Phát Triển</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-2\" title=\"Thành Tích - Giải Thưởng\" target=\"_self\">Thành Tích - Giải Thưởng</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu#section-3\" title=\"Sơ Đồ Tổ Chức\" target=\"_self\">Sơ Đồ Tổ Chức</a>\r\n  </li>\r\n</ul></div></div>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"col w-1/2 md:w-1/3 xl:w-1/4 mt-5\">\r\n\t\t\t\t\t\t\t\t\t\t<!-- Liên kết nhanh-->\r\n\t\t\t\t\t\t\t\t\t\t<div class='Module Module-1350'><div class='ModuleContent'><p class=\"footer-title\">Liên kết nhanh</p>\r\n<ul class=\"footer-menu\">\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/\" title=\"Trang Chủ\" target=\"_self\">Trang Chủ</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/san-pham-dich-vu/san-pham-phong-thuy/tranh-phong-thuy\" title=\"Tranh Phong Thủy\" target=\"_self\">Tranh Phong Thủy</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/cua-hang-dai-ly/he-thong-cua-hang\" title=\"Cửa Hàng - Đại Lý\" target=\"_self\">Cửa Hàng - Đại Lý</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/cham-soc-khach-hang/chinh-sach-hau-mai-khach-le\" title=\"Chăm Sóc Khách Hàng\" target=\"_self\">Chăm Sóc Khách Hàng</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/gioi-thieu\" title=\"Giới Thiệu\" target=\"_self\">Giới Thiệu</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/cong-bo-thong-tin\" title=\"Công Bố Thông Tin\" target=\"_self\">Công Bố Thông Tin</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/doi-tac\" title=\"Đối Tác\" target=\"_self\">Đối Tác</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/tin-tuc\" title=\"Tin Tức\" target=\"_self\">Tin Tức</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/tuyen-dung\" title=\"Tuyển Dụng\" target=\"_self\">Tuyển Dụng</a>\r\n  </li>\r\n  <li>\r\n    <a class=\" \" href=\"https://sjc.com.vn:443/lien-he\" title=\"Liên Hệ\" target=\"_self\">Liên Hệ</a>\r\n  </li>\r\n</ul></div></div>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col w-full lg:w-1/3 mt-5\">\r\n\t\t\t\t\t\t\t\t<!-- Footer - Subscribe HTML -->\r\n\t\t\t\t\t\t\t\t<div class='Module Module-1351'><div class='ModuleContent'><h4 class=\"footer-title\">Đăng ký nhận bản tin</h4>\n<div class=\"subscribe-desc text-base text-black leading-[calc(20/14)] mb-5 xl:text-tiny\">\n<p>Hãy là người đầu tiên biết về các thiết kế mới, sự kiện đặc biệt, khai trương và\nhơn thế nữa.</p>\n</div></div></div>\r\n\r\n\t\t\t\t\t\t\t\t<!-- Footer - Subscribe -->\r\n\t\t\t\t\t\t\t\t<div class='Module Module-1352'><div id=\"ctl00_mdl1352_ctl00_subscribe1_ctl00\">\r\n\t\r\n        <div id='ctl00_mdl1352_ctl00_subscribe1_pnlSubscribeBody' class='subscribe'>\n\r\n            \r\n            <div id='ctl00_mdl1352_ctl00_subscribe1_pnlSubscribe' class='subscribefrm'>\n\r\n                <input name=\"ctl00$mdl1352$ctl00$subscribe1$txtEmail\" type=\"text\" id=\"ctl00_mdl1352_ctl00_subscribe1_txtEmail\" title=\"Nhập địa chỉ email hợp lệ.\" class=\"subscribeemail\" placeholder=\"Địa chỉ email\" />\r\n                \r\n                <button onclick=\"__doPostBack('ctl00$mdl1352$ctl00$subscribe1$btnSubscribe','')\" id=\"ctl00_mdl1352_ctl00_subscribe1_btnSubscribe\" class=\"subscribebutton\" ValidationGroup=\"subscribe\">\r\n                    Đăng ký\r\n                </button>\r\n                \r\n                \r\n            \n</div>\r\n            \r\n            \r\n        \n</div>\r\n    \r\n</div></div>\r\n\r\n\t\t\t\t\t\t\t\t<!-- Footer - Social -->\r\n\t\t\t\t\t\t\t\t<div class='Module Module-1353'><div class='ModuleContent'><ul class=\"social-list flex items-center space-x-5 xl:space-x-7.5\">\n    <li><a class=\"text-3xl xl:text-[calc(28/1920*100rem)]\" href=\"https://www.facebook.com/sjcsaigon\" target=\"_blank\"><em class=\"fa-brands fa-square-facebook\"></em></a></li>\n    <li><a class=\"text-3xl xl:text-[calc(28/1920*100rem)]\" href=\"https://zalo.me/1278962738116993574\" target=\"_blank\"><em class=\"fa-solid fa-square-z\"></em></a></li>\n</ul></div></div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"footer-bot bg-secondary py-10 xl:pt-[calc(45/1920*100rem)] text-white text-lg xl:text-[calc(15/1920*100rem)] leading-[calc(20/15)] font-light xl:pb-11\">\r\n\t\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t\t<div class=\"block -mt-5 md:flex md:items-center md:justify-between\">\r\n\t\t\t\t\t\t\t<!-- Footer - Address -->\r\n\t\t\t\t\t\t\t<div class='footer-bot-left mt-5 Module Module-1354'><div class='ModuleContent'><h4>Công ty TNHH MTV Vàng Bạc Đá Quý Sài Gòn - SJC</h4>\n<address>418 - 420 Nguyễn Thị Minh Khai, Phường 05, Quận 3, Thành phố Hồ Chí Minh</address>\n<p>Điện thoại:<a href=\"tel: +84 28.39293388\">&nbsp;(028)39293388</a> - Fax:<a href=\"tel: +84 28.39293377\">&nbsp;(028)39293377</a></p>\n<p>Email:<a href=\"mailto: marketing@sjc.com.vn\">&nbsp;info@sjc.com.vn</a></p></div></div>\r\n\t\t\t\t\t\t\t<!-- Footer - Copyright -->\r\n\t\t\t\t\t\t\t<div class='footer-bot-right mt-5 Module Module-1355'><div class='ModuleContent'><h4>© 2024 SJC. </h4>\n<ul>\n    <li><a href=\"/sitemap.aspx\">Sơ đồ trang web.</a></li>\n</ul></div></div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</footer>\r\n\r\n\t\t\t<script src=\"/Data/Sites/1/skins/default/js/global.min.js?v=10.1.0\"></script>\r\n\t\t\t<script src=\"/Data/Sites/1/skins/default/js/main.min.js?v=10.1.0\"></script>\r\n\t\t\t<script src=\"/Data/Sites/1/skins/default/js/ecommerce.js\"></script>\r\n\t\t\t<script src=\"/Data/Sites/1/skins/default/js/goldprice.js?v=3.0.1\"></script>\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t<!-- Your Plugin chat code -->\r\n\t\t\t<div id=\"fb-customer-chat\" class=\"fb-customerchat\">\r\n\t\t\t</div>\r\n\t\t\t<script>\r\n\t\t\t\tvar chatbox = document.getElementById('fb-customer-chat');\r\n\t\t\t\tchatbox.setAttribute(\"page_id\", \"141441882678230\");\r\n\t\t\t\tchatbox.setAttribute(\"attribution\", \"biz_inbox\");\r\n\t\t\t</script>\r\n\t\t\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"CA0B0334\" />\r\n<input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEdAAWsE1W8tki5rRPhWR2rqRfbFPwGfF8HbttE4GtSO8jI37kubPMxT28jdLImKJFIzUkDNAFqk7XonAuk77hRZVNeEYSXfG2VHLK1YY+EYnZHT6jcO5kWwRP0MGoRyhUehDCP76HK\" />\r\n<script type=\"text/javascript\">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script></form>\r\n\t\t<script src=\"https://sp.zalo.me/plugins/sdk.js\"></script>\r\n\t</body>\r\n\t</html>\r\n"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-04-02T06:02:33.000Z",
+  "versionId": "9ec4408f-51f8-4856-a10f-77cba484c9e3"
+}
