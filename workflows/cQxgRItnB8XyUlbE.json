@@ -1,0 +1,240 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "main": [
+        [
+          {
+            "node": "Date & Time1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time1": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-03-26T10:15:50.758Z",
+  "id": "cQxgRItnB8XyUlbE",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "convert to lunar",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -260,
+        -60
+      ],
+      "id": "4ed3f9ac-60c1-4281-a71b-636721a51ba9",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        -60
+      ],
+      "id": "c101cb9d-acd7-4290-9caa-373b84c579f0",
+      "name": "Date & Time"
+    },
+    {
+      "parameters": {
+        "operation": "formatDate",
+        "date": "={{ $json.currentDate }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        180,
+        -60
+      ],
+      "id": "92259f30-d189-4d31-8937-96a42608b2db",
+      "name": "Date & Time1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst date = $json.formattedDate;\nconst temp = date.split('/');\n\n\nreturn {\n  day:temp[1],\n  month:temp[0],\n  year:temp[2]\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        -60
+      ],
+      "id": "cfba431a-711c-4461-8e91-7d12cb71cd41",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://open.oapi.vn/date/convert-to-lunar",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "day",
+              "value": "={{ $json.day }}"
+            },
+            {
+              "name": "month",
+              "value": "={{ $json.month }}"
+            },
+            {
+              "name": "year",
+              "value": "={{ $json.year }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        620,
+        -60
+      ],
+      "id": "eef845c0-ef39-458d-893f-a6bed45e18b0",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "afbf2f76-b54d-41dd-8e70-c6c9ce81c0de",
+              "name": "data",
+              "value": "={{ $json.data }}",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        840,
+        -60
+      ],
+      "id": "77472233-4d4a-41bd-8d48-968866007145",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -300,
+        -280
+      ],
+      "id": "44128b83-b739-4c1f-9af7-37bf0715cdd8",
+      "name": "Telegram Trigger",
+      "webhookId": "072e9cf6-6d3f-4e0e-90f6-d76c5147cf80",
+      "credentials": {
+        "telegramApi": {
+          "id": "VO57iCVnJ1LzftSr",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = $json.message.text;\n\nfunction extraTextAndDate(input){\n  const regex = /(am lich)(?: ngay)(?: (\\d{2}\\/\\d{2}\\/\\d{4}))?/i;\n  const match = input.match(regex);\n\n  function isValidDate (dateStr){\n    \n  }\n    \n}\n\nreturn  {text };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        20,
+        -280
+      ],
+      "id": "50c148a4-cc37-4273-aadf-afbd1a1a5e31",
+      "name": "Code1"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-03-26T12:25:02.000Z",
+  "versionId": "cabd0d79-a4d8-406a-b80e-693276c9637c"
+}
